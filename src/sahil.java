@@ -1,6 +1,6 @@
 import java.util.*;
 public class sahil {
-    public static void printCalculateTable(int n) {
+    public  static void printCalculateTable(int n) {
         for (int i = 1; i < 11; i++) {
             System.out.println(n * i);
         }
