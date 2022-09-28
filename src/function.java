@@ -1,21 +1,19 @@
 import java.util.*;
-
 public class function {
 
-    public static int printCalculateSum(int n) {
-       int sum=0 ;
-       for(int i=0; i<=n; i++){
-           if(i%2!=0){
-               sum=sum+i;
-           }
-       }
-       System.out.println(sum);
+    public static int printGreaterNumber(int a, int b) {
+        if (a < b) {
+            return b;
+        }
+        else{
+            return a;
+        }
 
-        return sum;
     }
     public static void main (String args[]){
         Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-         printCalculateSum(n);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        System.out.println(printGreaterNumber(a,b));
     }
 }
